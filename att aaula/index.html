@@ -4,66 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Exemplo</title>
+    <title>boybet</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Estilos personalizados -->
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="2.css">
+    <style>
+        .trige{
+            width: 100%;
+        }
+        .cassino{
+            width: 100%;
+            height: 100%;
+        }
+        .jogos{
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%;
+            background-color: aqua;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .jogos-content{
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Meu Site</a>
+            <a class="navbar-brand" href="#">Boy Bet</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><!--ver explição no fim do cód.-->
+                aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Página Principal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="page1.html">Página 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="page2.html">Página 2</a>
-                    </li>
-                </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Página Principal</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="pag2.html">Cassino</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pag3.html">Cassino ao vivo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pag4.html">Crash Game</a>
+                </li>
+            </ul>
             </div>
         </nav>
     </header>
 
+    <br><br>
+    <br><br>
     <div class="container">
-        <h1>Bem-vindo à Página Principal</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec sapien eu nisi cursus finibus vel ac lacus.
-        </p>
+        <h1>Bem-vindo à boybet</h1>
+        <p> Escolha seu jogo favorito para jogar!</p>
     </div>
+    <br><br>
+    <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="jogos">
+                        <div class="jogos-content"> <img class="trige" src="https://play-lh.googleusercontent.com/UbLCk9XADvLp3Dcojwq4c5cGw0yk0qnVVXrUfMTS1w_sybarbsiKQwwIPk591QoHEUs"> </div>
+                    </div>
+                </div>    
+                <div class="col-6 col-md-3">
+                    <div class="jogos">
+                        <div class="jogos-content"><img class="trige" src="https://th.bing.com/th/id/OIP.8nstOmR2sitbM66H0g09MAAAAA?rs=1&pid=ImgDetMain"></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="jogos">
+                        <div class="jogos-content"><img class="trige" src="https://ik.imagekit.io/tz66n6vb9/big-bass-bonanza.jpg?ik-s=322152076281f23edbeec2b750dd506059d5d2d2"></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="jogos">
+                        <div class="jogos-content"><img class="cassino" src="https://th.bing.com/th/id/OIP.0yjB8-5MYARMaud4RqkRfgAAAA?rs=1&pid=ImgDetMain"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
-
-<!-- 
-    data-toggle: Este atributo é específico para o framework JavaScript, como o Bootstrap, por exemplo. 
-    Ele indica o tipo de comportamento que deve ser alternado. No caso do Bootstrap, "collapse" é usado 
-    para alternar a exibição de conteúdo colapsável, como um menu de navegação que pode ser expandido e contraído.
-
-    data-target: Indica o destino do evento de alternância. No exemplo, "#navbarNav" é o seletor CSS usado 
-    para identificar o elemento que será afetado pela alternância. Isso se refere à barra de 
-    navegação que será mostrada ou ocultada quando o botão de alternância for clicado.
-
-    aria-controls: Este atributo é parte do padrão de acessibilidade ARIA (Accessible Rich Internet Applications). 
-    Ele fornece uma associação explícita entre o botão de alternância e o elemento que ele controla. No caso deste 
-    botão, "navbarNav" é o ID do elemento que será controlado.
-
-    aria-expanded: Outro atributo ARIA, indica o estado de expansão do elemento controlado pelo botão. 
-    Neste caso, "false" indica que o elemento controlado (provavelmente a barra de navegação) não está expandido inicialmente.
-
-    aria-label: Fornece uma etiqueta acessível para o elemento, que é usada por tecnologias assistivas, 
-    como leitores de tela, para descrever o propósito do botão. No caso deste botão, "Toggle navigation" 
-    é a etiqueta que descreve a função do botão de alternância da barra de navegação. 
--->
